@@ -1,0 +1,35 @@
+scp -r speedata dlsun@192.168.0.18:~/kt55/frameworks/base/core/java/com/
+
+scp Context.java dlsun@192.168.0.18:~/kt55/frameworks/base/core/java/android/content/
+
+scp ContextImpl.java dlsun@192.168.0.18:~/kt55/frameworks/base/core/java/android/app/
+
+scp Android.mk dlsun@192.168.0.18:~/kt55/frameworks/base/
+
+scp SystemServer.java dlsun@192.168.0.18:~/kt55/frameworks/base/services/java/com/android/server/
+
+scp -r new/device/ dlsun@192.168.0.18:~/kt55/frameworks/base/services/core/java/com/android/server/
+
+
+scp bak/Android.mk dlsun@192.168.0.18:~/kt55/frameworks/base/
+
+scp bak/Context.java dlsun@192.168.0.18:~/kt55/frameworks/base/core/java/android/content/
+
+scp bak/SystemServer.java dlsun@192.168.0.18:~/kt55/frameworks/base/services/java/com/android/server/
+
+scp bak/ContextImpl.java dlsun@192.168.0.18:~/kt55/frameworks/base/core/java/android/app/
+
+scp dlsun@192.168.0.18:~/kt55/out/target/product/spda6753/system.img .
+
+scp -r kt55 dlsun@192.168.0.18:~/
+
+
+core/java/com/speedata/uhf/IUhfManager.aidl \
+
+生成jar
+
+jar cvfm DeviceManager.jar Manifest.mf com/zte/zsdk
+
+
+scp dlsun@192.168.0.18:~/zte/DeviceManager.jar .
+

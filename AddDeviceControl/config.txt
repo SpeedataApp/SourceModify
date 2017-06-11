@@ -1,0 +1,8 @@
+scp -r new/kt55/ dlsun@192.168.0.18:~/
+
+jar cvfm DeviceControl.jar Manifest.mf com/android/control
+
+scp dlsun@192.168.0.18:~/kt55/out/target/product/spda6753/system.img .
+
+scp dlsun@192.168.0.18:~/mkJar/control/DeviceControl.jar .
+
